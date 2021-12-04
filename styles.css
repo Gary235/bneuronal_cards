@@ -1,23 +1,16 @@
-@font-face {
-  font-family: Outfit;
-  src: url("assets/fonts/outfit_light.ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: Outfit;
-  src: url("assets/fonts/outfit_medium.ttf");
-  font-weight: 500;
+:root {
+  --my-accent-color: #00CAB1;
+  --my-text-color: #001412;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Outfit, sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 1em;
   font-weight: 300;
-  color: #1a150a;
+  color: var(--my-text-color);
 }
 
 body {
@@ -26,18 +19,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #E6FAF7;
 }
 
 main {
-  background-color: transparent;
+  background: transparent;
   box-shadow: 0 -5px 40px 7px #00000015;
   max-width: 600px;
   width: 100%;
   margin: 3em 0 2em;
-}
-
-.name {
-  font-size: 2.5em;
 }
 
 .profile {
@@ -45,8 +35,9 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 0.5em 0;
-  background: #ffd662;
+  background: var(--my-accent-color);
   padding: 2.5em 0;
+  text-align: center;
 }
 
 .profile-pic {
@@ -56,21 +47,36 @@ main {
   border-radius: 50%;
   aspect-ratio: 1;
   position: relative;
-  background: url("assets/images/profile-photo.png");
   background-size: cover;
   box-shadow: 0 12px 30px 0 #00000050;
 }
 
 .name {
-  padding-top: 0.25em;
+  padding-block: 0.25em;
   font-weight: 500;
+  font-size: 2.5em;
+}
+
+.description {
+  width: 80%;
+  font-size: 0.9;
+  line-height: 1.2;
+}
+
+.desc-tag {
+  margin-block: 1em;
+}
+
+.tag {
+  padding: 0.5em 0.75em;
+  border: 1px solid #000;
+  border-radius: 2em;
 }
 
 .ctas {
-  padding-top: 1em;
   width: 100%;
   display: flex;
-  background: #ffd662;
+  background: var(--my-accent-color);
 }
 
 .cta {
@@ -106,6 +112,7 @@ main {
   display: flex;
   padding: 1.5em 2em;
   transition: background 0.2s;
+  align-items: center;
 }
 
 .item:hover {
@@ -121,17 +128,16 @@ main {
 }
 
 .item-text {
-  color: #000;
   padding-bottom: 0.35em;
 }
 
 .item-link {
-  color: #7b62ff;
+  color: #6148df;
   padding-bottom: 0.35em;
 }
 
 .item-helper {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .social-media {
@@ -164,7 +170,10 @@ main {
     margin: 0;
   }
 
-  .cta:hover {
+  .cta:hover,
+  .social-img:hover,
+  .item:hover {
     background: none;
+    transform: scale(1);
   }
 }

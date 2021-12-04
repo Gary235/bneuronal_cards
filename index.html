@@ -1,78 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-card</title>
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <div class="profile">
-        <div class="profile-pic"></div>
-        <h1 class="name">Viviana Holder</h1>
-        <p class="description">CEO de NeuronalCoach</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <div class="profile">
+      <img src="assets/profile-photo.png" alt="foto de perfil" class="profile-pic" />
+      <h1 class="name">Viviana Holder</h1>
+      <div class="description">
+        <p class="desc-tag">
+          Asesora y entrenadora en Neuroliderazgo
+        </p>
+        <p class="desc-tag">
+          Gestión Emocional
+        </p>
+        <p class="desc-tag">
+          Neuroaprendizaje Organizacional
+        </p>
+        <p class="desc-tag">
+          Coach Ontológico Profesional
+        </p>
       </div>
+    </div>
 
-      <div class="ctas">
-        <a href="tel:+54 9 11 5587 9092" class="call cta">
-          <img src="assets/icons/call.svg" class="call-ic icon" />
-          LLAMAR
+    <div class="ctas">
+      <a href="tel:+54 9 11 5587 9092" class="call cta" aria-label="llamar">
+        <svg width="20" height="20" viewBox="0 0 20 20" class="mail-ic icon" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M9.36621 10.2974C13.3553 14.2853 14.2602 9.6717 16.8001 12.2098C19.2487 14.6577 20.6561 15.1482 17.5537 18.2497C17.1651 18.562 14.6961 22.3192 6.01908 13.6446C-2.65901 4.96898 1.09606 2.49743 1.40844 2.10893C4.51834 -1.00117 5.00034 0.414365 7.44896 2.86231C9.98884 5.40148 5.37713 6.3094 9.36621 10.2974Z"
+            fill="#000" />
+        </svg>
+        LLAMAR
+      </a>
+      <a href="mailto:nvneuronal@gmail.com" class="mail cta" aria-label="mail">
+        <svg width="21" height="19" viewBox="0 0 21 19" class="mail-ic icon" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M14.971 0.120331C16.312 0.120331 17.602 0.650331 18.551 1.60133C19.501 2.55033 20.032 3.83033 20.032 5.17033V13.0703C20.032 15.8603 17.762 18.1203 14.971 18.1203H5.09198C2.30098 18.1203 0.0319824 15.8603 0.0319824 13.0703V5.17033C0.0319824 2.38033 2.29098 0.120331 5.09198 0.120331H14.971ZM16.562 6.66033L16.642 6.58033C16.881 6.29033 16.881 5.87033 16.631 5.58033C16.492 5.43133 16.301 5.34033 16.102 5.32033C15.892 5.30933 15.692 5.38033 15.541 5.52033L11.032 9.12033C10.452 9.60133 9.62098 9.60133 9.03198 9.12033L4.53198 5.52033C4.22098 5.29033 3.79098 5.32033 3.53198 5.59033C3.26198 5.86033 3.23198 6.29033 3.46098 6.59033L3.59198 6.72033L8.14198 10.2703C8.70198 10.7103 9.38098 10.9503 10.092 10.9503C10.801 10.9503 11.492 10.7103 12.051 10.2703L16.562 6.66033Z"
+            fill="#000" />
+        </svg> MAIL
+      </a>
+    </div>
+
+    <div class="info">
+      <ul class="info-list">
+        <li class="item">
+          <svg width="20" height="20" viewBox="0 0 20 20" class="item-icon" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.36621 10.2974C13.3553 14.2853 14.2602 9.6717 16.8001 12.2098C19.2487 14.6577 20.6561 15.1482 17.5537 18.2497C17.1651 18.562 14.6961 22.3192 6.01908 13.6446C-2.65901 4.96898 1.09606 2.49743 1.40844 2.10893C4.51834 -1.00117 5.00034 0.414365 7.44896 2.86231C9.98884 5.40148 5.37713 6.3094 9.36621 10.2974Z"
+              fill="#000" />
+          </svg>
+          <div class="item-info">
+            <p class="item-text">+54 9 11 6920 0431</p>
+            <p class="item-helper">Celular</p>
+          </div>
+        </li>
+        <li class="item">
+          <svg width="21" height="19" viewBox="0 0 21 19" class="item-icon" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M14.971 0.120331C16.312 0.120331 17.602 0.650331 18.551 1.60133C19.501 2.55033 20.032 3.83033 20.032 5.17033V13.0703C20.032 15.8603 17.762 18.1203 14.971 18.1203H5.09198C2.30098 18.1203 0.0319824 15.8603 0.0319824 13.0703V5.17033C0.0319824 2.38033 2.29098 0.120331 5.09198 0.120331H14.971ZM16.562 6.66033L16.642 6.58033C16.881 6.29033 16.881 5.87033 16.631 5.58033C16.492 5.43133 16.301 5.34033 16.102 5.32033C15.892 5.30933 15.692 5.38033 15.541 5.52033L11.032 9.12033C10.452 9.60133 9.62098 9.60133 9.03198 9.12033L4.53198 5.52033C4.22098 5.29033 3.79098 5.32033 3.53198 5.59033C3.26198 5.86033 3.23198 6.29033 3.46098 6.59033L3.59198 6.72033L8.14198 10.2703C8.70198 10.7103 9.38098 10.9503 10.092 10.9503C10.801 10.9503 11.492 10.7103 12.051 10.2703L16.562 6.66033Z"
+              fill="#000" />
+          </svg>
+          <div class="item-info">
+            <p class="item-text">nvneuronal@gmail.com</p>
+            <p class="item-helper">Mail</p>
+          </div>
+        </li>
+        <li class="item">
+          <svg width="21" height="21" viewBox="0 0 21 21" class="item-icon" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.3753 2.93763H14.3944C14.2043 1.46928 12.9736 0.324982 11.4729 0.324982H8.89161C7.39086 0.324982 6.16024 1.46928 5.97015 2.93763H3.99916C1.89811 2.93763 0.187256 4.66926 0.187256 6.79584C0.187256 6.79584 0.237281 8.45659 0.267296 8.97304C0.267296 9.0743 0.317321 9.16544 0.397361 9.21608L1.35784 9.88443C3.00867 10.9791 4.93863 11.7619 6.97765 12.1528C7.11072 12.1781 8.01107 12.347 8.01107 12.347C8.01107 12.347 8.98966 12.5991 10.1823 12.5991C11.3829 12.5991 12.3739 12.347 12.3739 12.347C12.3739 12.347 13.2358 12.1882 13.3698 12.1619C15.4259 11.772 17.3558 10.9882 19.0167 9.8743C19.0567 9.85405 19.4969 9.56038 19.9782 9.20494C20.0572 9.1462 20.1052 9.04899 20.1072 8.94975C20.1272 7.69608 20.1873 6.79584 20.1873 6.79584C20.1873 4.66926 18.4764 2.93763 16.3753 2.93763Z"
+              fill="#000" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M19.8471 11.1402C19.8271 11.1504 19.8071 11.1605 19.8071 11.1605C17.7861 12.5174 15.3549 13.4187 12.8036 13.7934C12.4434 13.844 12.1324 13.9425 11.6953 13.9855C11.115 14.0425 11.0438 14.0533 10.1934 14.0533H10.1834H10.1634C9.31298 14.0533 9.22991 14.0488 8.63156 13.9855C8.21298 13.9412 7.93118 13.844 7.571 13.7934C5.01972 13.4187 2.5885 12.5174 0.567494 11.1605C0.557489 11.1504 0.457439 11.0896 0.377399 11.1402C0.287354 11.1909 0.287354 11.3124 0.287354 11.3124L0.357389 16.4769C0.357389 18.6035 2.05824 20.325 4.15929 20.325H16.2053C18.3064 20.325 20.0072 18.6035 20.0072 16.4769L20.0873 11.3124C20.0873 11.3124 20.0873 11.1909 19.9972 11.1402C19.9472 11.1099 19.8872 11.12 19.8471 11.1402Z"
+              fill="#000" />
+          </svg>
+          <div class="item-info">
+            <p class="item-text">NVNeuronal</p>
+            <p class="item-helper">co-Fundadora</p>
+          </div>
+        </li>
+        <li class="item">
+          <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" class="item-icon">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.628906 10.325C0.628906 4.80498 5.09891 0.324982 10.6289 0.324982C16.1489 0.324982 20.6289 4.80498 20.6289 10.325C20.6289 15.855 16.1489 20.325 10.6289 20.325C5.09891 20.325 0.628906 15.855 0.628906 10.325ZM12.8589 12.155L14.4789 7.03498C14.5889 6.68498 14.2689 6.35498 13.9189 6.46498L8.79891 8.06498C8.58891 8.13498 8.41891 8.29498 8.35891 8.50498L6.75891 13.635C6.64891 13.975 6.97891 14.305 7.31891 14.195L12.4189 12.595C12.6289 12.535 12.7989 12.365 12.8589 12.155Z"
+              fill="#000" />
+          </svg>
+          <div class="item-info">
+            <a href="http://www.nvneuronal.com.ar" target="_blank" class="item-link"
+              rel="noreferrer">www.nvneuronal.com.ar</a>
+            <p class="item-helper">Página Web</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/vivianaholder/" target="_blank" rel="noreferrer"
+          class="linkedin social-link">
+          <svg viewBox="0 0 20 21" class="social-img" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.776794 10.5192C0.776794 5.21716 5.07477 0.919189 10.3768 0.919189C15.6788 0.919189 19.9768 5.21716 19.9768 10.5192C19.9768 15.8212 15.6788 20.1191 10.3768 20.1191C5.07477 20.1191 0.776794 15.8212 0.776794 10.5192ZM13.1425 15.2328H15.0977L15.0985 11.7784C15.0985 10.0826 14.7332 8.77905 12.7514 8.77905C12.3796 8.76526 12.011 8.85254 11.6849 9.03174C11.3587 9.21082 11.0873 9.4751 10.8994 9.79626H10.8731V8.93579H8.99615V15.2325H10.9514V12.1176C10.9514 11.2961 11.1072 10.5006 12.1255 10.5006C13.1294 10.5006 13.1425 11.4406 13.1425 12.1707V15.2328ZM5.65503 6.94055C5.65515 7.56714 6.16321 8.0752 6.78992 8.07507C7.09082 8.07495 7.37939 7.95532 7.59216 7.74255C7.80493 7.52966 7.92444 7.24109 7.92438 6.94006C7.92426 6.31348 7.41614 5.80554 6.78949 5.80566C6.16284 5.80579 5.65491 6.31384 5.65503 6.94055ZM5.81024 15.2328H7.76758L7.76752 8.93579H5.81024V15.2328Z"
+              fill="#0A66C2" />
+          </svg>
         </a>
-        <a href="mailto:berkman.gary@gmail.com" class="mail cta">
-          <img src="assets/icons/mail.svg" class="mail-ic icon" />
-          MAIL
+        <a href="https://www.instagram.com/nvneuronal/" target="_blank" rel="noreferrer" class="instagram social-link">
+          <img src="assets/instagram.png" class="social-img">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100066789545658" rel="noreferrer" target="_blank"
+          class="facebook social-link">
+          <svg viewBox="0 0 20 21" class="social-img" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.6578 0.919189C4.3558 0.919189 0.0578003 5.21719 0.0578003 10.5192C0.0578003 15.8212 4.3558 20.1192 9.6578 20.1192C14.9598 20.1192 19.2578 15.8212 19.2578 10.5192C19.2578 5.21719 14.9598 0.919189 9.6578 0.919189ZM11.9318 7.55319H10.4888C10.3178 7.55319 10.1278 7.77819 10.1278 8.07719V9.11919H11.9328L11.6598 10.6052H10.1278V15.0662H8.4248V10.6052H6.8798V9.11919H8.4248V8.24519C8.4248 6.99119 9.2948 5.97219 10.4888 5.97219H11.9318V7.55319V7.55319Z"
+              fill="#3244E2" />
+          </svg>
+
         </a>
       </div>
+    </div>
+  </main>
+</body>
 
-      <div class="info">
-        <ul class="info-list">
-          <li class="item">
-            <img src="assets/icons/call_black.svg" class="item-icon" />
-            <div class="item-info">
-              <p class="item-text">+54 9 11 5587 9092</p>
-              <p class="item-helper">Celular</p>
-            </div>
-          </li>
-          <li class="item">
-            <img src="assets/icons/mail_black.svg" class="item-icon" />
-            <div class="item-info">
-              <p class="item-text">berkman.gary@gmail.com</p>
-              <p class="item-helper">Mail</p>
-            </div>
-          </li>
-          <li class="item">
-            <img src="assets/icons/suitcase.svg" class="item-icon" />
-            <div class="item-info">
-              <p class="item-text">NVNeuronal</p>
-              <p class="item-helper">CEO</p>
-            </div>
-          </li>
-          <li class="item">
-            <img src="assets/icons/discovery.svg" class="item-icon" />
-            <div class="item-info">
-              <a
-                href="http://www.nvneuronal.com.ar"
-                target="blank"
-                class="item-link"
-                >www.nvneuronal.com.ar</a
-              >
-              <p class="item-helper">Página Web</p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="social-media">
-          <a href="" target="blank" class="instagram social-link">
-            <img src="assets/icons/instagram.svg" class="social-img">
-          </a>
-          <a href="" target="blank" class="facebook social-link">
-            <img src="assets/icons/facebook.svg" class="social-img">
-          </a>
-        </div>
-      </div>
-    </main>
-  </body>
 </html>
