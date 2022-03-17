@@ -92,6 +92,7 @@ main {
   gap: 0.5em;
   text-decoration: none;
   transition: background 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .cta:hover {
@@ -147,17 +148,25 @@ main {
   justify-content: center;
   margin: 0 auto;
   gap: 0 1em;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .social-link {
   width: 100%;
+  height: auto;
+  max-height: 50px;
+  filter: brightness(0.8) contrast(1.2);
   display: flex;
   justify-content: center;
+
+  -webkit-filter: brightness(0.8) contrast(1.2);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .social-img {
   width: 50px;
   transition: all 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .social-img:hover {
